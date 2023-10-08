@@ -15,4 +15,57 @@ let othertops = ["short-sleeve", "up-shoulder"];
 let alltops = [...tops,...othertops, "black"];
 console.log(alltops); //spread operator can even merge different values of arrays and put into another one. (like concat does), and we can add new 
 
+//In object
+let student = {
+    name : "Shiva",
+    class : {
+        name:6,
+    },
+    age : "13"
+};
+let student2 = {
+    hobbies : "Dancing",
+}
+let studentName = student["name"];
+studentName //normal method 
+const { name: stuName , age , school="SCSS", ...otherdetails } = student; //square bracket for array instead of curlt bracket
+stuName; //alias of name is stuName (alias = nickname/ alternative name)
+age; school;//destructuring assignment
+otherdetails; // use of spread operator
+const { class:{name:className} } = student; // destructuring assignment
+console.log(className);
+
+//let a={}; object.assign(a, student); 
+let a = { ...student, ...student2 }; //spread operator can be used to combine object or arrays too but in case of safe key, the second one replaces the first value.
+a;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
