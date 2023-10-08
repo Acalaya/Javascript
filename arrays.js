@@ -20,4 +20,37 @@ let plants = new Array("Aloevera", "Snake", "Monstera");
 console.log(typeof plants);
 plants[3] = "Lavender";
 console.log(plants);
+delete plants[3];
+console.log(plants);
+
+//inbuilt arrays functions:
+//push - add value in the end
+plants.push("Bamboo", "Peace Lily");
+console.log(plants);
+//pop - delete last value
+plants.pop();
+console.log(plants);
+//unshift- add new in beginning
+plants.unshift("Peace Lily");
+console.log(plants);
+//shift- remove first value
+plants.shift();
+console.log(plants);
+//join - join array elements
+console.log(plants.join(" "));
+console.log(plants.join(" , "));
+console.log(plants);
+//concat- merge array
+let games = ["football", "cricket"];
+let newData = plants.concat(games);
+console.log(newData);
+//reverse - reverse array
+console.log(plants.reverse());
+//slice - returns portion of array, when typical portion or section needed
+console.log(plants.slice(2)); //sliced value after 2
+console.log(plants.slice(2,4)); //sliced valur from 2 to 4
+//fill - set or fill array with new one
+console.log(plants.fill("hey"));
+console.log(plants.fill("baby",2,4)); 
+
 
