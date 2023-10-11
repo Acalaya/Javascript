@@ -31,13 +31,46 @@ plants.forEach(function(v,i) {
     console.log(v);
 }); 
 
-//for in loop
+//for in loop - get index in array and key in object
+const insects = ["cockroach" , "ladybugs", ]
+for (let index in insects) {
+    console.log(index);
+    console.log(insects[index]);
+}; 
+// good thing about it, we can use it in object as well
+const games = {
+    game1 : "PUBG",
+    game2 : "valorant",
+    game3 : {
+        name : "Class Royal",
+    },
+};
+for (let g in games ) {
+    console.log(g);
+    console.log(games[g]);
+};
+// for nested object, to use loops to get value of nested 
+for (const key in games) {
+    console.log(key);
+    let value = games[key];
 
-//for up loop
+    if (typeof value === "object") {
+        for (const k in value) {
+            console.log(value[k]);
+        }
+    } else console.log(value);
+}
+// we can use Object.keys(games) as well.
 
-
-
-
+//for of loop - mostly used for arrays and strings
+const players = ["Ronaldo", "Marcelo"]; //araay
+for(let playerlist of players) {
+    console.log(playerlist);
+}; // for of loop gives the values of array
+let channel = "Discord"; //string
+for (let c of channel) {
+    console.log(c);
+};
 
 
 
