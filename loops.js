@@ -78,6 +78,13 @@ for (let c of channel) {
 
 
 
+for (let i = 1; i<=1000; i++) {
+    console.log(`${i}. I love you for thousand years monsoon <3 \n`);
+};
+
+
+
+
 
 
 
