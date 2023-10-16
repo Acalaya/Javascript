@@ -72,15 +72,27 @@ for (let c of channel) {
     console.log(c);
 };
 
-
-
-
-
-
-
 for (let i = 1; i<=1000; i++) {
     console.log(`${i}. I love you for thousand years monsoon <3 \n`);
 };
+
+for (let i = 1; i<=100; i++) {
+    console.log(`${i}. I am really sorry, mero hajur <3  \n`);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
